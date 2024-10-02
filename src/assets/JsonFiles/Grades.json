@@ -1,0 +1,186 @@
+[
+  {
+    "semester": "Semester 1",
+    "results": [
+      {
+        "subject": "Introduction to Computer Science",
+        "credit": 3,
+        "gpa": 1.5,
+        "result": "Fail"
+      },
+      {
+        "subject": "Mathematics I",
+        "credit": 4,
+        "gpa": 3.0,
+        "result": "Pass"
+      },
+      {
+        "subject": "Physics",
+        "credit": 3,
+        "gpa": 2.5,
+        "result": "Pass"
+      }
+    ]
+  },
+  {
+    "semester": "Semester 2",
+    "results": [
+      {
+        "subject": "Data Structures",
+        "credit": 4,
+        "gpa": 3.8,
+        "result": "Pass"
+      },
+      {
+        "subject": "Discrete Mathematics",
+        "credit": 3,
+        "gpa": 3.2,
+        "result": "Pass"
+      },
+      {
+        "subject": "Mathematics II",
+        "credit": 4,
+        "gpa": 2.9,
+        "result": "Pass"
+      }
+    ]
+  },
+  {
+    "semester": "Semester 3",
+    "results": [
+      {
+        "subject": "Computer Organization",
+        "credit": 3,
+        "gpa": 3.6,
+        "result": "Pass"
+      },
+      {
+        "subject": "Operating Systems",
+        "credit": 4,
+        "gpa": 3.0,
+        "result": "Pass"
+      },
+      {
+        "subject": "Software Engineering",
+        "credit": 4,
+        "gpa": 3.4,
+        "result": "Pass"
+      }
+    ]
+  },
+  {
+    "semester": "Semester 4",
+    "results": [
+      {
+        "subject": "Database Management Systems",
+        "credit": 4,
+        "gpa": 3.7,
+        "result": "Pass"
+      },
+      {
+        "subject": "Computer Networks",
+        "credit": 3,
+        "gpa": 2.8,
+        "result": "Pass"
+      },
+      {
+        "subject": "Web Development",
+        "credit": 3,
+        "gpa": 3.5,
+        "result": "Pass"
+      }
+    ]
+  },
+  {
+    "semester": "Semester 5",
+    "results": [
+      {
+        "subject": "Theory of Computation",
+        "credit": 3,
+        "gpa": 3.0,
+        "result": "Pass"
+      },
+      {
+        "subject": "Artificial Intelligence",
+        "credit": 4,
+        "gpa": 3.8,
+        "result": "Pass"
+      },
+      {
+        "subject": "Mobile Application Development",
+        "credit": 3,
+        "gpa": 3.2,
+        "result": "Pass"
+      }
+    ]
+  },
+  {
+    "semester": "Semester 6",
+    "results": [
+      {
+        "subject": "Machine Learning",
+        "credit": 4,
+        "gpa": 3.5,
+        "result": "Pass"
+      },
+      {
+        "subject": "Human-Computer Interaction",
+        "credit": 3,
+        "gpa": 3.0,
+        "result": "Pass"
+      },
+      {
+        "subject": "Compiler Design",
+        "credit": 3,
+        "gpa": 2.8,
+        "result": "Pass"
+      }
+    ]
+  },
+  {
+    "semester": "Semester 7",
+    "results": [
+      {
+        "subject": "Cybersecurity",
+        "credit": 3,
+        "gpa": 3.9,
+        "result": "Pass"
+      },
+      {
+        "subject": "Cloud Computing",
+        "credit": 4,
+        "gpa": 3.3,
+        "result": "Pass"
+      },
+      {
+        "subject": "Big Data Analytics",
+        "credit": 3,
+        "gpa": 3.1,
+        "result": "Pass"
+      }
+    ]
+  },
+  {
+    "semester": "Semester 8",
+    "results": [
+      {
+        "subject": "Capstone Project",
+        "credit": 6,
+        "gpa": 4.0,
+        "result": "Pass"
+      },
+      {
+        "subject": "Software Testing",
+        "credit": 3,
+        "gpa": 3.2,
+        "result": "Pass"
+      },
+      {
+        "subject": "Advanced Topics in CSE",
+        "credit": 3,
+        "gpa": 3.6,
+        "result": "Pass"
+      }
+    ]
+  }
+]

@@ -24,7 +24,7 @@ export default {
         softGray: "#E5E5E5", // Neutral Soft Gray
         darkGray: "#333333",
         white: "#FFFFFF", //used
-        red: "#FF0000", //used
+        red: "#DC143C", //used
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
