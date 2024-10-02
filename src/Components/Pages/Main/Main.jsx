@@ -1,9 +1,10 @@
+import { Outlet } from "react-router-dom";
+
 const Main = () => {
   return (
-    <div>
-      <h2>Main page</h2>
+    <div className="bg-emerald p-10">
+      <Outlet />
     </div>
   );
 };
-
 export default Main;
