@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "name": "Data Structures and Algorithms",
+    "instructor": "Dr. Alan Turing",
+    "schedule": "Mon, Wed, Fri - 9:00 AM",
+    "progress": "80%",
+    "description": "This course covers the fundamental data structures and algorithms used in computer science, focusing on efficiency and performance.",
+    "credits": 3,
+    "syllabus": [
+      "Introduction to Data Structures",
+      "Arrays and Linked Lists",
+      "Stacks and Queues",
+      "Trees and Graphs",
+      "Sorting Algorithms",
+      "Searching Algorithms"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Database Systems",
+    "instructor": "Dr. Edgar Codd",
+    "schedule": "Tue, Thu - 11:00 AM",
+    "progress": "90%",
+    "description": "An introduction to database systems, including database design, SQL, and transaction management.",
+    "credits": 3,
+    "syllabus": [
+      "Introduction to Databases",
+      "Entity-Relationship Models",
+      "Normalization",
+      "SQL Queries",
+      "Transaction Management",
+      "Database Security"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Operating Systems",
+    "instructor": "Ms. Linus Torvalds",
+    "schedule": "Mon, Wed - 2:00 PM",
+    "progress": "75%",
+    "description": "This course introduces the concepts of operating systems, including process management, memory management, and file systems.",
+    "credits": 3,
+    "syllabus": [
+      "Introduction to Operating Systems",
+      "Process Management",
+      "Threads and Concurrency",
+      "Memory Management",
+      "File Systems",
+      "Security and Protection"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Computer Networks",
+    "instructor": "Dr. Vint Cerf",
+    "schedule": "Fri - 1:00 PM",
+    "progress": "88%",
+    "description": "An overview of computer networking concepts, including network protocols, architectures, and security.",
+    "credits": 3,
+    "syllabus": [
+      "Introduction to Networking",
+      "Network Protocols",
+      "Network Architectures",
+      "Wireless Networking",
+      "Network Security",
+      "Future of Networking"
+    ]
+  }
+]

@@ -6,6 +6,7 @@ import Login from "../Pages/Login/Login";
 import StudentPortal from "../Dashboard/StudentPortal/StudentPortal/StudentPortal";
 import FacultyOverview from "../Dashboard/FacultyOverview/FacultyOverview/FacultyOverview";
 import EnrollInCourses from "../Dashboard/EnrollInCourses/EnrollInCourses/EnrollInCourses";
+import CourseDetails from "../Dashboard/StudentPortal/Subsections/CourseDetails";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -23,9 +24,11 @@ export const router = createBrowserRouter([
     element: <DashboardLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/Dashboard/StudentPortal", element: <StudentPortal /> },
-      { path: "/Dashboard/FacultyOverview", element: <FacultyOverview /> },
-      { path: "/Dashboard/EnrollInCourses", element: <EnrollInCourses /> },
+      { path: "/Dashboard/Student-Portal", element: <StudentPortal /> },
+      { path: "/Dashboard/Faculty-Overview", element: <FacultyOverview /> },
+      { path: "/Dashboard/Enroll-in-Courses", element: <EnrollInCourses /> },
+      // -----------------------------------
+      { path: "/Dashboard/Course-Details/:id", element: <CourseDetails /> },
     ],
   },
 ]);

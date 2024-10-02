@@ -15,17 +15,17 @@ const Sidebar = () => {
     { name: "Dashboard", path: "/", icon: <FaHome /> },
     {
       name: "Student Portal",
-      path: "/Dashboard/StudentPortal",
+      path: "/Dashboard/Student-Portal",
       icon: <PiStudentDuotone />,
     },
     {
       name: "Faculty Overview",
-      path: "/Dashboard/FacultyOverview",
+      path: "/Dashboard/Faculty-Overview",
       icon: <FaUniversity />,
     },
     {
       name: "Enroll In Courses",
-      path: "/Dashboard/EnrollInCourses",
+      path: "/Dashboard/Enroll-in-Courses",
       icon: <SiStudyverse />,
     },
   ];
