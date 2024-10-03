@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Tech Conference 2024",
+    "date": "2024-11-15",
+    "time": "10:00 AM",
+    "location": "Dhaka, Bangladesh",
+    "status": "Submitted",
+    "description": "A gathering of industry leaders to discuss emerging trends in technology."
+  },
+  {
+    "title": "AI & Machine Learning Workshop",
+    "date": "2024-12-01",
+    "time": "2:00 PM",
+    "location": "Online",
+    "status": "Incomplete",
+    "description": "A hands-on workshop on AI and ML concepts, focusing on real-world applications."
+  },
+  {
+    "title": "Web Development Bootcamp",
+    "date": "2024-12-20",
+    "time": "9:00 AM",
+    "location": "Chittagong, Bangladesh",
+    "status": "Incomplete",
+    "description": "An in-depth bootcamp on modern web development practices using JavaScript and React."
+  }
+]

@@ -1,6 +1,7 @@
 import Grades from "../Sections/Grades";
 import StudentProfile from "../Sections/StudentProfile";
 import StudentsCourses from "../Sections/StudentsCourses";
+import UpcomingEvents from "../Sections/UpcomingEvents";
 
 const StudentPortal = () => {
   return (
@@ -8,6 +9,7 @@ const StudentPortal = () => {
       <StudentProfile />
       <StudentsCourses />
       <Grades />
+      <UpcomingEvents />
     </div>
   );
 };
