@@ -32,23 +32,23 @@ const StudentsCourses = () => {
           >
             <Link
               to={`/Dashboard/Course-Details/${course.id}`}
-              className="text-lg lg:text-xl font-bold text-emerald hover:underline"
+              className="text-base lg:text-lg font-bold text-emerald hover:underline"
             >
               {course.name}
             </Link>
-            <p className="text-emerald">
+            <p className="text-emerald text-sm">
               <span className="font-bold">Instructor</span>: {course.instructor}
             </p>
-            <p className="text-emerald mb-2">
+            <p className="text-emerald mb-2 text-sm">
               <span className="font-bold">Schedule</span>: {course.schedule}
             </p>
             <div className="flex items-center">
-              <span className="text-emerald">
+              <span className="text-emerald text-sm">
                 <span className="font-bold">Progress</span>:{" "}
               </span>
               <div className="w-36 h-2 bg-lightMoss ml-2">
                 <div
-                  className="h-full bg-emerald"
+                  className="h-full bg-emerald text-sm"
                   style={{ width: course.progress }}
                 ></div>
               </div>

@@ -48,10 +48,18 @@ const Grades = () => {
                 <table className="min-w-full border-collapse">
                   <thead>
                     <tr className="bg-lightMoss">
-                      <th className="border px-4 py-2">Subject</th>
-                      <th className="border px-4 py-2">Credit</th>
-                      <th className="border px-4 py-2">GPA</th>
-                      <th className="border px-4 py-2">Result</th>
+                      <th className="border px-4 py-2 text-sm lg:text-base text-emerald">
+                        Subject
+                      </th>
+                      <th className="border px-4 py-2 text-sm lg:text-base text-emerald">
+                        Credit
+                      </th>
+                      <th className="border px-4 py-2 text-sm lg:text-base text-emerald">
+                        GPA
+                      </th>
+                      <th className="border px-4 py-2 text-sm lg:text-base text-emerald">
+                        Result
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
@@ -82,11 +90,11 @@ const Grades = () => {
                 </table>
               </div>
               <div className="mt-4 flex flex-col sm:flex-row justify-end gap-5">
-                <p className="font-semibold">
+                <p className="font-semibold text-sm lg:text-base text-emerald">
                   Total GPA:{" "}
                   {calculateTotalGPA(semesterData.results).toFixed(2)}
                 </p>
-                <p className="font-semibold">
+                <p className="font-semibold text-sm lg:text-base text-emerald">
                   Total Credits:{" "}
                   {semesterData.results.reduce(
                     (acc, course) => acc + course.credit,

@@ -16,17 +16,17 @@ const UpcomingEvents = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-5 md:gap-1 lg:gap-0 items-start">
+    <div className="flex flex-col items-start">
       <h2 className="text-3xl font-extrabold mb-8 text-emerald text-center px-1 lg:px-4 py-1">
         Schedules
       </h2>
       {/* Calendar */}
-      <div className="w-full rounded-xl">
+      <div className="w-full rounded-xl mb-5">
         <CustomCalendar />
       </div>
 
       {/* Events */}
-      <div className="w-full px-1 lg:px-4 py-1 space-y-4">
+      <div className="w-full px-1  py-1 space-y-4">
         {events.map((event, index) => (
           <motion.div
             key={index}
