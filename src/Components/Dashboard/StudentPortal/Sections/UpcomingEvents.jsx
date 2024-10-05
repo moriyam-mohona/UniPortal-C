@@ -17,8 +17,8 @@ const UpcomingEvents = () => {
 
   return (
     <div className="flex flex-col items-start">
-      <h2 className="text-3xl font-extrabold mb-8 text-emerald text-center px-1 lg:px-4 py-1">
-        Schedules
+      <h2 className="text-xl font-extrabold text-emerald text-center px-1 lg:px-4 mb-3">
+        Events
       </h2>
       {/* Calendar */}
       <div className="w-full rounded-xl mb-5">
@@ -40,7 +40,7 @@ const UpcomingEvents = () => {
             <MdEventNote className="text-3xl mr-4 text-emerald hidden lg:flex" />
 
             <div className="flex-1">
-              <h3 className="font-semibold text-sx lg:text-lg text-emerald">
+              <h3 className="font-semibold text-xs lg:text-sm text-emerald">
                 {event.title}
               </h3>
 

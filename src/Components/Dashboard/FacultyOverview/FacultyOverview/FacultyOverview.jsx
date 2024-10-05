@@ -43,7 +43,9 @@ const FacultyOverview = () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-semibold text-emerald">Faculty Overview</h1>
+      <h2 className="text-xl font-extrabold text-emerald text-center px-1 lg:px-4 mb-3">
+        Faculty Overview
+      </h2>
       <input
         type="text"
         placeholder="Search Faculty"

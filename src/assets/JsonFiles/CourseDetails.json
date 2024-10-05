@@ -1,0 +1,35 @@
+{
+  "generalCourses": {
+    "Mathematics": {
+      "description": "Advanced Mathematics covering calculus and algebra.",
+      "schedule": "Mondays and Wednesdays, 10 AM - 12 PM",
+      "prerequisites": "Basic Algebra",
+      "syllabus": ["Calculus", "Algebra", "Geometry", "Trigonometry"]
+    },
+    "Physics": {
+      "description": "Introductory Physics focusing on mechanics and thermodynamics.",
+      "schedule": "Tuesdays and Thursdays, 1 PM - 3 PM",
+      "prerequisites": "High school Physics",
+      "syllabus": ["Mechanics", "Thermodynamics", "Electromagnetism"]
+    }
+  },
+  "cseCourses": {
+    "Data Structures": {
+      "description": "Introduction to data structures including arrays, linked lists, and trees.",
+      "schedule": "Mondays, 2 PM - 4 PM",
+      "prerequisites": "Basic programming knowledge",
+      "syllabus": ["Arrays", "Linked Lists", "Trees", "Graphs"]
+    },
+    "Operating Systems": {
+      "description": "An in-depth look at operating systems and how they manage resources.",
+      "schedule": "Thursdays, 3 PM - 5 PM",
+      "prerequisites": "Basic computer architecture",
+      "syllabus": [
+        "Processes",
+        "Memory Management",
+        "File Systems",
+        "Concurrency"
+      ]
+    }
+  }
+}

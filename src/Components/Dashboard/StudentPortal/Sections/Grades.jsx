@@ -23,7 +23,7 @@ const Grades = () => {
 
   return (
     <>
-      <h2 className="text-3xl font-extrabold mb-8 text-emerald text-center">
+      <h2 className="text-xl font-extrabold text-emerald text-center px-1 lg:px-4 mb-3">
         Result
       </h2>
       {gradesData.map((semesterData, index) => (

@@ -16,7 +16,7 @@ const StudentsCourses = () => {
 
   return (
     <div className="">
-      <h2 className="text-3xl font-extrabold mb-8 text-emerald text-center">
+      <h2 className="text-xl font-extrabold text-emerald text-center px-1 lg:px-4 mb-3">
         Current Courses
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 lg:gap-10">

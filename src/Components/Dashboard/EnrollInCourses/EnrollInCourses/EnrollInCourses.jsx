@@ -1,31 +1,30 @@
-// const EnrollInCourses = () => {
-//   return (
-//     <div>
-//       <h2>Enroll In Courses</h2>
-//     </div>
-//   );
-// };
-
-// export default EnrollInCourses;
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import courseData from "../../../../assets/JsonFiles/CourseDetails.json";
 import { motion } from "framer-motion";
 
 const EnrollInCourses = () => {
+  const [courses, setCourses] = useState({});
+
+  useEffect(() => {
+    const fetchCourses = () => {
+      setCourses(courseData);
+    };
+
+    fetchCourses();
+  }, []);
+
   const [formData, setFormData] = useState({
     course: "",
     name: "",
     email: "",
     startDate: "",
   });
+
   const [formErrors, setFormErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const courses = ["Mathematics", "Physics", "Computer Science", "History"];
-
   const validateForm = () => {
     let errors = {};
-
     if (!formData.course) errors.course = "Course is required.";
     if (!formData.name) errors.name = "Name is required.";
     if (!formData.email) {
@@ -54,84 +53,171 @@ const EnrollInCourses = () => {
     <div className="p-4">
       <h1 className="text-2xl font-semibold text-emerald">Enroll in Courses</h1>
       {!isSubmitted ? (
-        <form onSubmit={handleSubmit} className="space-y-4 mt-4">
-          <div>
-            <label htmlFor="course" className="block text-md font-semibold">
-              Select Course:
-            </label>
-            <select
-              name="course"
-              value={formData.course}
-              onChange={handleInputChange}
-              className="w-full border rounded p-2"
+        <>
+          <form onSubmit={handleSubmit} className="space-y-4 mt-4">
+            <div>
+              <label
+                htmlFor="course"
+                className="block text-md font-semibold text-emerald"
+              >
+                Select Course:
+              </label>
+              <select
+                name="course"
+                value={formData.course}
+                onChange={handleInputChange}
+                className="w-full border rounded p-2 text-emerald"
+              >
+                <option value="">--Select Course--</option>
+                {/* General Courses */}
+                {courses.generalCourses && (
+                  <optgroup label="General Courses">
+                    {Object.keys(courses.generalCourses).map(
+                      (course, index) => (
+                        <option key={index} value={course}>
+                          {course}
+                        </option>
+                      )
+                    )}
+                  </optgroup>
+                )}
+                {/* CSE Courses */}
+                {courses.cseCourses && (
+                  <optgroup label="CSE Courses">
+                    {Object.keys(courses.cseCourses).map((course, index) => (
+                      <option key={index} value={course}>
+                        {course}
+                      </option>
+                    ))}
+                  </optgroup>
+                )}
+              </select>
+              {formErrors.course && (
+                <p className="text-red text-sm">{formErrors.course}</p>
+              )}
+            </div>
+
+            <div>
+              <label
+                htmlFor="name"
+                className="block text-sm md:text-base font-semibold text-emerald"
+              >
+                Name:
+              </label>
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                className="w-full border rounded p-2"
+              />
+              {formErrors.name && (
+                <p className="text-red text-sm">{formErrors.name}</p>
+              )}
+            </div>
+
+            <div>
+              <label
+                htmlFor="email"
+                className="block text-sm md:text-base font-semibold text-emerald"
+              >
+                Email:
+              </label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                className="w-full border rounded p-2"
+              />
+              {formErrors.email && (
+                <p className="text-red text-sm ">{formErrors.email}</p>
+              )}
+            </div>
+
+            <div>
+              <label
+                htmlFor="startDate"
+                className="block text-sm md:text-base font-semibold text-emerald"
+              >
+                Preferred Start Date:
+              </label>
+              <input
+                type="date"
+                name="startDate"
+                value={formData.startDate}
+                onChange={handleInputChange}
+                className="w-full border rounded p-2"
+              />
+              {formErrors.startDate && (
+                <p className="text-red text-sm">{formErrors.startDate}</p>
+              )}
+            </div>
+
+            <button
+              type="submit"
+              className="bg-emerald text-white p-2 rounded w-full mt-4"
             >
-              <option value="">--Select Course--</option>
-              {courses.map((course, index) => (
-                <option key={index} value={course}>
-                  {course}
-                </option>
-              ))}
-            </select>
-            {formErrors.course && (
-              <p className="text-red-500 text-sm">{formErrors.course}</p>
-            )}
-          </div>
+              Submit
+            </button>
+          </form>
 
-          <div>
-            <label htmlFor="name" className="block text-md font-semibold">
-              Name:
-            </label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleInputChange}
-              className="w-full border rounded p-2"
-            />
-            {formErrors.name && (
-              <p className="text-red-500 text-sm">{formErrors.name}</p>
-            )}
-          </div>
+          {/* Show detailed course info */}
+          {/* ... */}
+          {formData.course && (
+            <motion.div
+              className="bg-blue-100 p-4 mt-4 rounded"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <h3 className="text-lg font-semibold text-emerald">
+                Course Details
+              </h3>
 
-          <div>
-            <label htmlFor="email" className="block text-md font-semibold">
-              Email:
-            </label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleInputChange}
-              className="w-full border rounded p-2"
-            />
-            {formErrors.email && (
-              <p className="text-red-500 text-sm">{formErrors.email}</p>
-            )}
-          </div>
+              <p className="mt-2 text-sm md:text-base">
+                <strong className="text-emerald  ">Description:</strong>{" "}
+                {(courses.generalCourses?.[formData.course] &&
+                  courses.generalCourses[formData.course].description) ||
+                  (courses.cseCourses?.[formData.course] &&
+                    courses.cseCourses[formData.course].description)}
+              </p>
 
-          <div>
-            <label htmlFor="startDate" className="block text-md font-semibold">
-              Preferred Start Date:
-            </label>
-            <input
-              type="date"
-              name="startDate"
-              value={formData.startDate}
-              onChange={handleInputChange}
-              className="w-full border rounded p-2"
-            />
-            {formErrors.startDate && (
-              <p className="text-red-500 text-sm">{formErrors.startDate}</p>
-            )}
-          </div>
+              <p className="mt-1 text-sm md:text-base">
+                <strong className="text-emerald text-sm md:text-base ">
+                  Schedule:
+                </strong>{" "}
+                {(courses.generalCourses?.[formData.course] &&
+                  courses.generalCourses[formData.course].schedule) ||
+                  (courses.cseCourses?.[formData.course] &&
+                    courses.cseCourses[formData.course].schedule)}
+              </p>
 
-          <button
-            type="submit"
-            className="bg-emerald text-white p-2 rounded w-full mt-4"
-          >
-            Submit
-          </button>
-        </form>
+              <p className="mt-1 text-sm md:text-base">
+                <strong className="text-emerald text-sm md:text-base ">
+                  Prerequisites:
+                </strong>{" "}
+                {(courses.generalCourses?.[formData.course] &&
+                  courses.generalCourses[formData.course].prerequisites) ||
+                  (courses.cseCourses?.[formData.course] &&
+                    courses.cseCourses[formData.course].prerequisites)}
+              </p>
+
+              <p className="mt-1 text-sm md:text-base">
+                <strong className="text-emerald text-sm md:text-base ">
+                  Syllabus:
+                </strong>{" "}
+                {(courses.generalCourses?.[formData.course] &&
+                  courses.generalCourses[formData.course].syllabus.join(
+                    ", "
+                  )) ||
+                  (courses.cseCourses?.[formData.course] &&
+                    courses.cseCourses[formData.course].syllabus.join(", "))}
+              </p>
+            </motion.div>
+          )}
+          {/* ... */}
+        </>
       ) : (
         <motion.div
           className="bg-green-100 p-4 mt-4 rounded text-center"
@@ -139,7 +225,7 @@ const EnrollInCourses = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-xl font-semibold text-green-700">
+          <h2 className="text-xl font-semibold text-emerald">
             Enrollment Successful!
           </h2>
           <p className="text-md mt-2">
