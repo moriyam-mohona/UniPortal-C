@@ -2,6 +2,7 @@ import { useState } from "react";
 import login from "../../../assets/Login.jpg";
 import { FiEyeOff } from "react-icons/fi";
 import { BsEye } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -31,7 +32,7 @@ const Login = () => {
           <input
             type="email"
             id="email"
-            required
+            // required
             className="w-full p-2 border border-softGray rounded focus:outline-none focus:ring-2 focus:ring-mintGreen"
           />
         </div>
@@ -42,7 +43,7 @@ const Login = () => {
           <input
             type={showPassword ? "text" : "password"}
             id="password"
-            required
+            // required
             className="w-full p-2 border border-softGray rounded focus:outline-none focus:ring-2 focus:ring-mintGreen"
           />
           <button
@@ -53,12 +54,18 @@ const Login = () => {
             {showPassword ? <FiEyeOff /> : <BsEye />}
           </button>
         </div>
-        <button
+        {/* <button
           type="submit"
           className="w-full bg-emerald text-white py-2 rounded hover:bg-tealGreen transition duration-200"
         >
+          <Link to="/Dashboard">Login</Link>
+        </button> */}
+        <Link
+          to="/Dashboard"
+          className="w-full bg-emerald text-white py-2 rounded hover:bg-emerald/75 transition duration-200 text-center block"
+        >
           Login
-        </button>
+        </Link>
       </form>
     </div>
   );

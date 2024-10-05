@@ -12,7 +12,7 @@ const Sidebar = () => {
   // get current pathname
   const { pathname } = useLocation();
   const navItems = [
-    { name: "Dashboard", path: "/", icon: <FaHome /> },
+    { name: "Dashboard", path: "/Dashboard", icon: <FaHome /> },
     {
       name: "Student Portal",
       path: "/Dashboard/Student-Portal",
