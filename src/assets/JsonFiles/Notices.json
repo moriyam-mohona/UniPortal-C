@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "New Syllabus Instructions",
+    "date": "11 Mar 2024",
+    "daysAgo": "20 Days",
+    "icon": "📚"
+  },
+  {
+    "id": 2,
+    "title": "World Environment Day Program......!!!",
+    "date": "21 Apr 2024",
+    "daysAgo": "15 Days",
+    "icon": "🌍"
+  },
+  {
+    "id": 3,
+    "title": "Exam Preparation Notification!",
+    "date": "13 Mar 2024",
+    "daysAgo": "12 Days",
+    "icon": "📝"
+  },
+  {
+    "id": 4,
+    "title": "Online Classes Preparation",
+    "date": "24 May 2024",
+    "daysAgo": "2 Days",
+    "icon": "💻"
+  },
+  {
+    "id": 5,
+    "title": "Exam Time Table Release",
+    "date": "24 May 2024",
+    "daysAgo": "6 Days",
+    "icon": "⏰"
+  }
+]

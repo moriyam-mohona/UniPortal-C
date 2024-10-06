@@ -14,7 +14,6 @@ const Sidebar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
-  // get current pathname
   const { pathname } = useLocation();
   const navItems = [
     { name: "Dashboard", path: "/Dashboard", icon: <FaHome /> },
@@ -69,7 +68,6 @@ const Sidebar = () => {
           ))}
         </ul>
       </motion.div>
-      {/* Hamburger Menu */}
 
       {/* Mobile Menu */}
       <motion.ul

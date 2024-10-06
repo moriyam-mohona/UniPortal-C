@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Send Reminder to Students",
+    "time": "01:00 PM",
+    "status": "Completed"
+  },
+  {
+    "id": 2,
+    "title": "Create Routine for New Staff",
+    "time": "04:50 PM",
+    "status": "In Progress"
+  },
+  {
+    "id": 3,
+    "title": "Extra Class Info to Students",
+    "time": "04:55 PM",
+    "status": "Yet to Start"
+  },
+  {
+    "id": 4,
+    "title": "Fees for Upcoming Academics",
+    "time": "04:55 PM",
+    "status": "Yet to Start"
+  },
+  {
+    "id": 5,
+    "title": "English - Essay on Visit",
+    "time": "05:55 PM",
+    "status": "Yet to Start"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "1st place in \"Chess\"",
+    "description": "This event took place in Our School",
+    "icon": "♟️"
+  },
+  {
+    "id": 2,
+    "title": "Participated in \"Carrom\"",
+    "description": "Justin Lee participated in \"Carrom\"",
+    "icon": "🎱"
+  },
+  {
+    "id": 3,
+    "title": "1st place in \"100M\"",
+    "description": "This event took place in Our School",
+    "icon": "🏃‍♂️"
+  },
+  {
+    "id": 4,
+    "title": "International conference",
+    "description": "We attended an international conference",
+    "icon": "🌍"
+  },
+  {
+    "id": 5,
+    "title": "International conference",
+    "description": "We attended an international conference",
+    "icon": "🎱"
+  }
+]

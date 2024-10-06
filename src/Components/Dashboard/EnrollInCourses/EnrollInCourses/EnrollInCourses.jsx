@@ -65,7 +65,7 @@ const EnrollInCourses = () => {
   };
 
   return (
-    <div className="bg-lightMoss shadow rounded p-4 pb-6">
+    <div className="bg-white/70 shadow rounded p-4 pb-6">
       <h2 className="text-xl font-extrabold text-emerald mb-3">
         Enroll In Courses
       </h2>

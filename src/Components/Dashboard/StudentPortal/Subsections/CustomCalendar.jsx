@@ -19,7 +19,7 @@ const CustomCalendar = () => {
   };
 
   return (
-    <div className="p-6 bg-white rounded-lg shadow-lg w-full max-w-sm">
+    <div className="p-6 bg-white/80 rounded-lg shadow-lg w-full max-w-sm">
       <div className="flex justify-between items-center mb-4">
         <button
           onClick={() =>

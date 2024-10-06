@@ -22,7 +22,7 @@ const StudentsCourses = () => {
   }, []);
 
   return (
-    <div className="bg-lightMoss shadow rounded p-4 pb-6">
+    <div className="bg-white/70 shadow rounded p-4 pb-6">
       <h2 className="text-xl font-extrabold text-emerald mb-3">
         Current Courses
       </h2>
@@ -36,7 +36,7 @@ const StudentsCourses = () => {
           return (
             <motion.div
               key={course.id}
-              className="p-5 border rounded-lg shadow-md bg-white"
+              className="p-5 border rounded-lg shadow-md bg-white/60"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}

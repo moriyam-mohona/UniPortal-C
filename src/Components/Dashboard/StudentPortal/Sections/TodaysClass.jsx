@@ -28,7 +28,7 @@ const TodaysClass = () => {
   }, []);
 
   return (
-    <div className="bg-lightMoss shadow rounded p-4">
+    <div className="bg-white/70 shadow rounded p-4">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-extrabold text-emerald text-center">
           Today's Classes
@@ -40,7 +40,7 @@ const TodaysClass = () => {
         todayClasses.map((course, index) => (
           <div
             key={index}
-            className="flex items-center p-3 border rounded mb-3 bg-white shadow"
+            className="flex items-center p-3 border rounded mb-3 bg-white/60 shadow"
           >
             <div className="flex-1">
               <h3 className="font-semibold text-emerald text-sm lg:text-base">

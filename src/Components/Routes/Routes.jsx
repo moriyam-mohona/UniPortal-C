@@ -8,6 +8,7 @@ import FacultyOverview from "../Dashboard/FacultyOverview/FacultyOverview/Facult
 import EnrollInCourses from "../Dashboard/EnrollInCourses/EnrollInCourses/EnrollInCourses";
 import CourseDetails from "../Dashboard/StudentPortal/Subsections/CourseDetails";
 import FacultyDetails from "../Dashboard/FacultyOverview/FacultyDetails";
+import Dashboard from "../Dashboard/DashboardHome/Dashboard";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -25,6 +26,7 @@ export const router = createBrowserRouter([
     element: <DashboardLayout />,
     errorElement: <ErrorPage />,
     children: [
+      { path: "/Dashboard", element: <Dashboard /> },
       { path: "/Dashboard/Student-Portal", element: <StudentPortal /> },
       { path: "/Dashboard/Faculty-Overview", element: <FacultyOverview /> },
       { path: "/Dashboard/Enroll-in-Courses", element: <EnrollInCourses /> },

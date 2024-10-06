@@ -14,17 +14,11 @@ export default {
     },
     extend: {
       colors: {
-        emerald: "#014F43", // used
-        mintGreen: "#00A896", // Primary Mint Green
-        seaGreen: "#2A9D8F", // Primary Sea Green
-        lightMoss: "#B7E4C7", // used
-        tealGreen: "#007F5F", // Secondary Teal Green
-        limeGreen: "#A8DADC", // Accent Lime Green
-        mutedYellow: "#F4A261", // Accent Muted Yellow
-        softGray: "#E5E5E5", // Neutral Soft Gray
-        darkGray: "#333333",
-        white: "#FFFFFF", //used
-        red: "#DC143C", //used
+        emerald: "#014F43",
+        lightMoss: "#B7E4C7",
+        white: "#FFFFFF",
+        red: "#DC143C",
+        yellow: "#FFD700",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

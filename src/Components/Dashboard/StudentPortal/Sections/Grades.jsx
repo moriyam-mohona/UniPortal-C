@@ -22,12 +22,12 @@ const Grades = () => {
   };
 
   return (
-    <div className="bg-lightMoss shadow rounded p-4 pb-6">
+    <div className="bg-white/70 shadow rounded p-4 pb-6">
       <h2 className="text-xl font-extrabold text-emerald mb-3">Result</h2>
       {gradesData.map((semesterData, index) => (
         <div key={index} className="mb-3">
           <div
-            className="cursor-pointer bg-white  p-3 lg:p-4 rounded-lg shadow-md"
+            className="cursor-pointer bg-white/60  p-3 lg:p-4 rounded-lg shadow-md"
             onClick={() => toggleSemester(semesterData.semester)}
           >
             <h3 className="text-sm md:text-base lg:text-lg font-semibold text-emerald">
@@ -36,7 +36,7 @@ const Grades = () => {
           </div>
           {expandedSemester === semesterData.semester && (
             <motion.div
-              className="bg-white p-4 rounded-lg shadow-md"
+              className="bg-white/60 p-4 rounded-lg shadow-md"
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}

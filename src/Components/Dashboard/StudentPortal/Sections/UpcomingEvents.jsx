@@ -15,7 +15,7 @@ const UpcomingEvents = () => {
     fetchEvents();
   }, []);
   return (
-    <div className="flex flex-col items-start bg-lightMoss shadow rounded p-4 pb-6">
+    <div className="flex flex-col items-start bg-white/70 shadow rounded p-4 pb-6">
       <h2 className="text-xl font-extrabold text-emerald text-center mb-3">
         Upcoming Events
       </h2>
@@ -34,7 +34,7 @@ const UpcomingEvents = () => {
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.3 }}
             whileHover={{ scale: 1.03 }}
-            className="bg-white shadow-md rounded-lg p-2 flex justify-between items-start border-l-4 border-emerald"
+            className="bg-white/60 shadow-md rounded-lg p-2 flex justify-between items-start border-l-4 border-emerald"
           >
             <MdEventNote className="text-3xl mr-4 text-emerald hidden lg:flex" />
 
@@ -42,10 +42,6 @@ const UpcomingEvents = () => {
               <h3 className="font-semibold text-xs lg:text-sm text-emerald">
                 {event.title}
               </h3>
-
-              {/* <p className="text-xs lg:text-sm text-emerald">
-                {event.description}
-              </p> */}
               <p className="text-xs text-emerald flex mt-2 gap-1 items-center">
                 <MdOutlineEventBusy />
                 {event.date} {event.time}

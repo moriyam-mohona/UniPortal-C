@@ -132,7 +132,7 @@ const EnrollmentForm = ({
         )}
       </div>
 
-      {/* Preferred Start Date */}
+      {/* Start Date */}
       <div>
         <label
           htmlFor="startDate"
