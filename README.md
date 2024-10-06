@@ -1,96 +1,64 @@
-# University Management System (Uni-Portal)
+# University Management System
 
 ## Overview
+This project is a University Management System interface created using the MERN stack React.js & Tailwind CSS. The interface is designed to provide a professional and user-friendly experience for students and faculty, showcasing key functionalities in a responsive manner.
 
-This project is a University Management System interface developed using React.js, and Tailwind CSS. It provides a professional, user-friendly UI to simulate key aspects of a university management system, ensuring mobile responsiveness and interactive features.
+## Features Implemented
 
-## Features
+### 1. Dashboard Home Page
+- Developed a dashboard displaying static data, which serves as an overview of student activities, events, and other key metrics.
 
-### Page 1: Student Dashboard
+### 2. Student Portal
+- **Courses Section**: 
+  - Implemented a courses feature that allows users to click on individual courses to view detailed information.
+  - Added functionality to view faculty details by clicking on faculty names associated with each course.
+- Created a section where the class schedule dynamically updates based on the selected courses, providing real-time information to students.
+- Developed two dedicated sections to display student results and upcoming events.
+- Integrated a calendar feature to visually represent events and important dates.
 
-- **Title**: Student Portal
-- **Description**:
-  - A dashboard displaying student information such as courses, grades, and upcoming events.
-  - Hidden details (e.g., course info, professor contact) appear on hover or click interactions.
-  - Engaging and organized design.
+### 3. Faculty Overview
+- Built a comprehensive faculty list categorized by department.
+- Implemented a search function that allows users to filter faculty members by name.
+- I added a detailed faculty page that is accessible by clicking on faculty names to view more information.
 
-### Page 2: Faculty Management
-
-- **Title**: Faculty Overview
-- **Description**:
-  - A comprehensive faculty list showing names, designations, and subjects.
-  - Includes a search/filter option for easy access to specific faculty members.
-  - Interactive features like popups or expandable sections revealing more information (e.g., office hours, contact details).
-
-### Page 3: Course Registration
-
-- **Title**: Enroll in Courses
-- **Description**:
-  - A user-friendly course registration form allowing students to browse and enroll in courses.
-  - Input validation for the form to ensure proper information submission.
-  - A hidden confirmation message or animated success message upon enrollment.
-
-### Additional Features
-
-- **Dynamic Schedule**: Today's class schedule updates dynamically based on selected courses.
-- **Course Details**: Clicking on courses reveals detailed course information.
-- **Faculty Details Page**: A separate page for faculty details accessible by clicking on faculty names.
-- **Result and Events Section**: Two sections for displaying results and events with an integrated calendar.
-- **Enrollment Process**: Allows students to select their department, choose courses, provide relevant information, and receive a success message.
+### 4. Course Enrollment
+- Designed an enrollment page where students can:
+  - Select their department.
+  - Choose available courses.
+  - Provide relevant personal information for enrollment.
+  - Included a confirmation message displayed upon successful enrollment.
 
 ## Technologies Used
-
 - **Frontend**: React.js, Tailwind CSS, Framer Motion for animations
 - **Hosting**: Deployed using Vercel
 
-## Installation
-
+## Installation Instructions
 To run this project locally, follow these steps:
 
 1. Clone the repository:
-
    ```bash
-   git clone https://github.com/yourusrname/yourproject.git
+   git clone https://github.com/yourusername/yourproject.git
    cd yourproject
-   ```
+Install dependencies:
 
-2. Install dependencies:
+bash
+Copy code
+npm install
+Run the application:
 
-   ```bash
-   npm install
-   ```
-
-3. Run the application:
-
-   ```bash
-   npm start
-   ```
-
-4. Access the application in your browser at `http://localhost:3000`.
+bash
+Copy code
+npm start
+Open your browser and navigate to http://localhost:3000.
 
 ## Live Demo
+- **Live Link**: [View the University Portal](https://uniportalclient.vercel.app)
 
-- **Live Link**: [https://uniportalclient.vercel.app/](#)
+Future Enhancements
+Adding user authentication and authorization features.
+Implementing real-time notifications for students.
+Enhancing UI/UX with more interactive elements and features.
 
-## GitHub Repository
 
-- **Repository Link**: [https://github.com/moriyam-mohona/UniPortal-C](#)
-
-## Contributions
-
-- Developed various components for displaying student-related information.
-- Implemented animations using Framer Motion for an enhanced user experience.
-- Designed a responsive layout using Tailwind CSS.
-- Ensured accessibility and user-friendliness across all features.
-
-## Future Improvements
-
-- Adding user authentication and authorization.
-- Implementing a real-time notification system.
-- Enhancing the UI/UX design with more interactive elements.
-
-## Acknowledgments
-
-- [Framer Motion](https://www.framer.com/motion/) for animation support.
-- [Tailwind CSS](https://tailwindcss.com/) for styling.
-- [React Router](https://reactrouter.com/) for routing.
+Acknowledgments
+Thanks to the technologies and libraries used in this project, including Framer Motion for animations and Tailwind CSS for styling.
