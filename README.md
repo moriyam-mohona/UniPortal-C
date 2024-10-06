@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a University Management System interface developed using the React.js, Tailwind css. It provides a professional, user-friendly UI to simulate key aspects of a university management system, ensuring mobile responsiveness and interactive features.
+This project is a University Management System interface developed using React.js, and Tailwind CSS. It provides a professional, user-friendly UI to simulate key aspects of a university management system, ensuring mobile responsiveness and interactive features.
 
 ## Features
 
