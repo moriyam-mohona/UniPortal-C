@@ -11,6 +11,23 @@
       "schedule": "Tuesdays and Thursdays, 1 PM - 3 PM",
       "prerequisites": "High school Physics",
       "syllabus": ["Mechanics", "Thermodynamics", "Electromagnetism"]
+    },
+    "Chemistry": {
+      "description": "Fundamentals of Chemistry, covering atomic structure and chemical reactions.",
+      "schedule": "Mondays and Wednesdays, 2 PM - 4 PM",
+      "prerequisites": "Basic understanding of science",
+      "syllabus": [
+        "Atomic Structure",
+        "Chemical Bonding",
+        "Stoichiometry",
+        "Thermochemistry"
+      ]
+    },
+    "Biology": {
+      "description": "An overview of biological concepts including cell structure and genetics.",
+      "schedule": "Tuesdays and Thursdays, 10 AM - 12 PM",
+      "prerequisites": "High school Biology",
+      "syllabus": ["Cell Biology", "Genetics", "Evolution", "Ecology"]
     }
   },
   "cseCourses": {
@@ -30,6 +47,77 @@
         "File Systems",
         "Concurrency"
       ]
+    },
+    "Database Management Systems": {
+      "description": "Fundamentals of database design and SQL.",
+      "schedule": "Tuesdays, 1 PM - 3 PM",
+      "prerequisites": "Basic programming skills",
+      "syllabus": ["Database Design", "SQL", "Normalization", "Transactions"]
+    },
+    "Web Development": {
+      "description": "Introduction to web development using HTML, CSS, and JavaScript.",
+      "schedule": "Wednesdays, 2 PM - 4 PM",
+      "prerequisites": "Basic computer knowledge",
+      "syllabus": ["HTML", "CSS", "JavaScript", "Responsive Design"]
+    },
+    "Software Engineering": {
+      "description": "Principles of software development methodologies and project management.",
+      "schedule": "Fridays, 3 PM - 5 PM",
+      "prerequisites": "Data Structures",
+      "syllabus": [
+        "Software Development Life Cycle",
+        "Agile Methodologies",
+        "Version Control",
+        "Testing"
+      ]
+    }
+  },
+  "eeeCourses": {
+    "Circuit Analysis": {
+      "description": "Study of circuit theory and analysis techniques.",
+      "schedule": "Mondays, 10 AM - 12 PM",
+      "prerequisites": "Basic Physics",
+      "syllabus": [
+        "Ohm's Law",
+        "KCL and KVL",
+        "Thevenin's and Norton's Theorems"
+      ]
+    },
+    "Electromagnetic Fields": {
+      "description": "Introduction to electromagnetic fields and their applications.",
+      "schedule": "Wednesdays, 1 PM - 3 PM",
+      "prerequisites": "Mathematics for Engineers",
+      "syllabus": ["Electric Fields", "Magnetic Fields", "Maxwell's Equations"]
+    },
+    "Control Systems": {
+      "description": "Fundamentals of control systems and feedback mechanisms.",
+      "schedule": "Fridays, 2 PM - 4 PM",
+      "prerequisites": "Differential Equations",
+      "syllabus": [
+        "Open Loop and Closed Loop Systems",
+        "Stability Analysis",
+        "PID Controllers"
+      ]
+    }
+  },
+  "civilCourses": {
+    "Structural Analysis": {
+      "description": "Analyzing structures for stability and strength.",
+      "schedule": "Tuesdays, 10 AM - 12 PM",
+      "prerequisites": "Engineering Mechanics",
+      "syllabus": ["Trusses", "Beams", "Frames", "Deflection Theory"]
+    },
+    "Fluid Mechanics": {
+      "description": "Study of fluid behavior and its applications in engineering.",
+      "schedule": "Thursdays, 1 PM - 3 PM",
+      "prerequisites": "Basic Physics",
+      "syllabus": ["Fluid Statics", "Fluid Dynamics", "Bernoulli's Equation"]
+    },
+    "Geotechnical Engineering": {
+      "description": "Fundamentals of soil mechanics and foundation design.",
+      "schedule": "Fridays, 10 AM - 12 PM",
+      "prerequisites": "Soil Mechanics",
+      "syllabus": ["Soil Properties", "Shear Strength", "Foundation Design"]
     }
   }
 }
