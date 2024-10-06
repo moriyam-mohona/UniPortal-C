@@ -18,8 +18,7 @@ const Login = () => {
       </div>
       <form className="bg-white p-6  shadow-md w-full max-w-md h-[400px]">
         {" "}
-        {/* Set height here */}
-        <h2 className="text-3xl font-bold text-emerald mb-4 text-center">
+        <h2 className="text-3xl font-extrabold text-emerald text-center mb-2">
           UniPortal
         </h2>
         <h2 className="text-base text-emerald mb-4 text-center">
