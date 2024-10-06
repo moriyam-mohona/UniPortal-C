@@ -22,14 +22,14 @@ const Grades = () => {
   };
 
   return (
-    <>
-      <h2 className="text-xl font-extrabold text-emerald text-center px-1 lg:px-4 mb-3">
+    <div className="bg-lightMoss shadow rounded p-4 pb-6">
+      <h2 className="text-xl font-extrabold text-emerald px-1 lg:px-4 mb-3">
         Result
       </h2>
       {gradesData.map((semesterData, index) => (
         <div key={index} className="mb-3">
           <div
-            className="cursor-pointer bg-lightMoss  p-3 lg:p-4 rounded-lg shadow-md"
+            className="cursor-pointer bg-white  p-3 lg:p-4 rounded-lg shadow-md"
             onClick={() => toggleSemester(semesterData.semester)}
           >
             <h3 className="text-sm md:text-lg lg:text-xl font-semibold text-emerald">
@@ -106,7 +106,7 @@ const Grades = () => {
           )}
         </div>
       ))}
-    </>
+    </div>
   );
 };
 

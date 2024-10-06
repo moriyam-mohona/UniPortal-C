@@ -3,68 +3,126 @@
     "id": 1,
     "name": "Data Structures and Algorithms",
     "instructor": "Dr. Alan Turing",
-    "schedule": "Mon, Wed, Fri - 9:00 AM",
+    "schedule": {
+      "days": ["Monday", "Sunday", "Friday"],
+      "time": "09:00 - 10:30 AM"
+    },
     "progress": "80%",
     "description": "This course covers the fundamental data structures and algorithms used in computer science, focusing on efficiency and performance.",
-    "credits": 3,
+    "credits": 4,
     "syllabus": [
       "Introduction to Data Structures",
       "Arrays and Linked Lists",
       "Stacks and Queues",
       "Trees and Graphs",
-      "Sorting Algorithms",
-      "Searching Algorithms"
+      "Sorting and Searching Algorithms",
+      "Dynamic Programming",
+      "Greedy Algorithms"
     ]
   },
   {
     "id": 2,
     "name": "Database Systems",
     "instructor": "Dr. Edgar Codd",
-    "schedule": "Tue, Thu - 11:00 AM",
+    "schedule": {
+      "days": ["Tuesday", "Thursday", "Sunday"],
+      "time": "11:00 - 12:30 PM"
+    },
     "progress": "90%",
     "description": "An introduction to database systems, including database design, SQL, and transaction management.",
     "credits": 3,
     "syllabus": [
       "Introduction to Databases",
-      "Entity-Relationship Models",
-      "Normalization",
-      "SQL Queries",
+      "Relational Model",
+      "SQL Queries and Subqueries",
+      "Database Normalization",
       "Transaction Management",
-      "Database Security"
+      "Indexing and Query Optimization",
+      "NoSQL Databases"
     ]
   },
   {
     "id": 3,
     "name": "Operating Systems",
     "instructor": "Ms. Linus Torvalds",
-    "schedule": "Mon, Wed - 2:00 PM",
+    "schedule": {
+      "days": ["Monday", "Wednesday"],
+      "time": "02:00 - 03:30 PM"
+    },
     "progress": "75%",
     "description": "This course introduces the concepts of operating systems, including process management, memory management, and file systems.",
-    "credits": 3,
+    "credits": 4,
     "syllabus": [
       "Introduction to Operating Systems",
-      "Process Management",
-      "Threads and Concurrency",
+      "Processes and Threads",
+      "CPU Scheduling",
       "Memory Management",
       "File Systems",
-      "Security and Protection"
+      "Concurrency and Deadlocks",
+      "Virtualization and Security"
     ]
   },
   {
     "id": 4,
     "name": "Computer Networks",
     "instructor": "Dr. Vint Cerf",
-    "schedule": "Fri - 1:00 PM",
+    "schedule": {
+      "days": ["Friday"],
+      "time": "01:00 - 02:30 PM"
+    },
     "progress": "88%",
     "description": "An overview of computer networking concepts, including network protocols, architectures, and security.",
     "credits": 3,
     "syllabus": [
       "Introduction to Networking",
-      "Network Protocols",
-      "Network Architectures",
-      "Wireless Networking",
+      "Network Protocols and Architectures",
+      "TCP/IP and UDP",
+      "Network Routing Algorithms",
+      "Wireless Networks",
       "Network Security",
-      "Future of Networking"
+      "Application Layer Protocols"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Software Engineering",
+    "instructor": "Dr. Margaret Hamilton",
+    "schedule": {
+      "days": ["Tuesday", "Thursday"],
+      "time": "09:00 - 10:30 AM"
+    },
+    "progress": "85%",
+    "description": "This course covers software development life cycle, agile methodologies, and software project management.",
+    "credits": 4,
+    "syllabus": [
+      "Introduction to Software Engineering",
+      "Software Development Life Cycle (SDLC)",
+      "Agile Methodologies",
+      "Requirements Engineering",
+      "Software Design Patterns",
+      "Testing and Maintenance",
+      "Software Project Management"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Artificial Intelligence",
+    "instructor": "Dr. John McCarthy",
+    "schedule": {
+      "days": ["Monday", "Wednesday", "Friday"],
+      "time": "11:00 - 12:30 PM"
+    },
+    "progress": "70%",
+    "description": "An introduction to the fundamentals of AI, machine learning, and neural networks.",
+    "credits": 4,
+    "syllabus": [
+      "Introduction to Artificial Intelligence",
+      "Problem Solving and Search Algorithms",
+      "Machine Learning Basics",
+      "Supervised and Unsupervised Learning",
+      "Neural Networks",
+      "Natural Language Processing",
+      "AI Ethics and Applications"
     ]
   }
 ]

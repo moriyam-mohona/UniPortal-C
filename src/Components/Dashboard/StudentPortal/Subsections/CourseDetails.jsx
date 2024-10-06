@@ -16,8 +16,8 @@ const CourseDetails = () => {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="mx-auto p-6 md:p-14 bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
+    <div className="">
+      <div className="mx-auto p-6 md:p-8 lg:p-14 w-full bg-white rounded-lg shadow-lg  min-h-screen">
         <button
           onClick={() => navigate("/Dashboard/Student-Portal")}
           className="mb-4 px-4 py-2 bg-emerald text-white rounded hover:bg-emerald-dark transition duration-300"
@@ -30,7 +30,8 @@ const CourseDetails = () => {
           {course.instructor}
         </p>
         <p className="text-sm md:text-base mb-2">
-          <strong className="text-emerald">Schedule:</strong> {course.schedule}
+          <strong className="text-emerald">Schedule:</strong>{" "}
+          {course.schedule.days.join(", ")} at {course.schedule.time}
         </p>
         <p className="text-sm md:text-base mb-2">
           <strong className="text-emerald">Description:</strong>{" "}
@@ -39,9 +40,7 @@ const CourseDetails = () => {
         <p className="text-sm md:text-base mb-2">
           <strong className="text-emerald">Credits:</strong> {course.credits}
         </p>
-        <h2 className="text-2xl text-emerald font-semibold mt-6 mb-2">
-          Syllabus:
-        </h2>
+        <h2 className="text-xl text-emerald font-bold mt-6 mb-2">Syllabus:</h2>
         <ul className="list-disc list-inside space-y-1">
           {course.syllabus.map((item, index) => (
             <li key={index} className="text-sm md:text-base">

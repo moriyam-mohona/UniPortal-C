@@ -5,12 +5,12 @@ import profile from "../../../../assets/student1.jpg";
 const studentData = {
   id: "ST1234546",
   name: "Angelo Riana",
-  class: "III",
-  section: "C",
-  rollNo: "36545",
+  dept: "CSE",
+  semester: "8",
+  rollNo: "113416",
   image: profile,
   result: {
-    exam: "1st Quarterly",
+    exam: "7th Semester",
     status: "Pass",
   },
 };
@@ -37,9 +37,11 @@ const StudentProfile = () => {
           </span>
           <h2 className="text-2xl font-semibold">{studentData.name}</h2>
           <p>
-            <span className="font-bold"> Class:</span> {studentData.class},{" "}
-            {studentData.section} | <span className="font-bold">Roll No:</span>{" "}
-            {studentData.rollNo}
+            <span className="font-bold"> Department:</span> {studentData.dept},{" "}
+            {studentData.semester}th Semester
+          </p>
+          <p>
+            <span className="font-bold">Roll No:</span> {studentData.rollNo}
           </p>
         </div>
       </div>

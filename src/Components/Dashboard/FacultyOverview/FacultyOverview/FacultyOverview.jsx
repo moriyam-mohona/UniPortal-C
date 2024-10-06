@@ -1,77 +1,94 @@
-// const FacultyOverview = () => {
-//   return (
-//     <div>
-//       <h2>Faculty Overview</h2>
-//     </div>
-//   );
-// };
-
-// export default FacultyOverview;
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import facultyData from "../../../../assets/JsonFiles/FacultyData.json";
+import { Link } from "react-router-dom";
 
 const FacultyOverview = () => {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [selectedFaculty, setSelectedFaculty] = useState(null);
-
-  const facultyList = [
-    {
-      name: "Dr. Alice Smith",
-      designation: "Professor",
-      subject: "Mathematics",
-      officeHours: "Mon-Fri: 10 AM - 12 PM",
-      contact: "alice@example.com",
-    },
-    {
-      name: "Mr. John Doe",
-      designation: "Lecturer",
-      subject: "Physics",
-      officeHours: "Tue-Thu: 1 PM - 3 PM",
-      contact: "john@example.com",
-    },
-    // Add more faculty members
+  const [faculties, setFaculties] = useState([]);
+  const [selectedDepartment, setSelectedDepartment] = useState(null);
+  const [searchItem, setSearchItem] = useState("");
+  const departments = [
+    ...new Set(facultyData.map((faculty) => faculty.department)),
   ];
 
-  const filteredFaculty = facultyList.filter((faculty) =>
-    faculty.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  useEffect(() => {
+    const fetchFaculties = () => {
+      setFaculties(facultyData);
+    };
 
-  const handleFacultyClick = (faculty) => {
-    setSelectedFaculty(selectedFaculty === faculty ? null : faculty);
+    fetchFaculties();
+  }, []);
+
+  const handleDepartmentClick = (department) => {
+    setSelectedDepartment(department);
   };
 
   return (
-    <div className="p-4">
-      <h2 className="text-xl font-extrabold text-emerald text-center px-1 lg:px-4 mb-3">
+    <div className="bg-lightMoss shadow rounded p-4 pb-6">
+      <h2 className="text-xl font-extrabold text-emerald px-1 lg:px-4 mb-3">
         Faculty Overview
       </h2>
-      <input
-        type="text"
-        placeholder="Search Faculty"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        className="border p-2 rounded w-full mt-2 mb-4"
-      />
-      <ul className="space-y-2">
-        {filteredFaculty.map((faculty, index) => (
-          <motion.div
+
+      <div className="mb-4">
+        {departments.map((department, index) => (
+          <button
             key={index}
-            className="bg-white shadow-md rounded-lg p-4 transition-transform duration-300 hover:shadow-lg hover:scale-105 cursor-pointer"
-            onClick={() => handleFacultyClick(faculty)}
+            onClick={() => handleDepartmentClick(department)}
+            className="mr-2 mb-2 px-4 py-2 bg-emerald text-white rounded hover:bg-emerald/20 hover:text-emerald hover:font-semibold"
           >
-            <h2 className="font-semibold text-lg text-emerald">
-              {faculty.name} - {faculty.designation} - {faculty.subject}
-            </h2>
-            {selectedFaculty === faculty && (
-              <div className="mt-2">
-                <p>Office Hours: {faculty.officeHours}</p>
-                <p>Contact: {faculty.contact}</p>
-              </div>
-            )}
-          </motion.div>
+            {department}
+          </button>
         ))}
-      </ul>
+      </div>
+
+      {/* Search faculty name */}
+      <div className="mb-4">
+        <input
+          type="text"
+          placeholder="Search Faculty Name..."
+          className="border rounded p-2 w-full"
+          value={searchItem}
+          onChange={(e) => setSearchItem(e.target.value)}
+        />
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+        {faculties
+          .filter((faculty) =>
+            selectedDepartment
+              ? faculty.department === selectedDepartment
+              : true
+          )
+          .filter((faculty) =>
+            faculty.name.toLowerCase().includes(searchItem.toLowerCase())
+          )
+          .map((faculty) => (
+            <motion.div
+              key={faculty.id}
+              className="p-5 border rounded-lg shadow-md bg-white"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.3 }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <Link
+                to={`/Dashboard/Faculty-Details/${faculty.name}`}
+                className="text-base lg:text-lg font-bold text-emerald hover:underline"
+              >
+                {faculty.name}
+              </Link>
+              <p className="text-emerald text-sm">
+                <span className="font-bold">Department</span>:{" "}
+                {faculty.department}
+              </p>
+              <p className="text-emerald text-sm">
+                <span className="font-bold">Courses</span>:{" "}
+                {faculty.courses.join(", ")}
+              </p>
+            </motion.div>
+          ))}
+      </div>
     </div>
   );
 };

@@ -14,9 +14,8 @@ const UpcomingEvents = () => {
 
     fetchEvents();
   }, []);
-
   return (
-    <div className="flex flex-col items-start">
+    <div className="flex flex-col items-start bg-lightMoss shadow rounded p-4 pb-6">
       <h2 className="text-xl font-extrabold text-emerald text-center px-1 lg:px-4 mb-3">
         Events
       </h2>
@@ -44,9 +43,9 @@ const UpcomingEvents = () => {
                 {event.title}
               </h3>
 
-              <p className="text-xs lg:text-sm text-emerald">
+              {/* <p className="text-xs lg:text-sm text-emerald">
                 {event.description}
-              </p>
+              </p> */}
               <p className="text-xs text-emerald flex mt-2 gap-1 items-center">
                 <MdOutlineEventBusy />
                 {event.date} {event.time}
