@@ -1,8 +1,13 @@
 import { motion } from "framer-motion";
-import { FaBars, FaHome, FaTimes, FaUniversity } from "react-icons/fa";
+import {
+  FaBars,
+  FaHome,
+  FaTimes,
+  FaUniversity,
+  FaUserGraduate,
+} from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
-import { PiStudentFill } from "react-icons/pi";
 import { SiStudyverse } from "react-icons/si";
 
 const Sidebar = () => {
@@ -16,7 +21,7 @@ const Sidebar = () => {
     {
       name: "Student Portal",
       path: "/Dashboard/Student-Portal",
-      icon: <PiStudentFill />,
+      icon: <FaUserGraduate />,
     },
     {
       name: "Faculty Overview",

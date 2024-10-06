@@ -65,8 +65,10 @@ const EnrollInCourses = () => {
   };
 
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-semibold text-emerald">Enroll in Courses</h1>
+    <div className="bg-lightMoss shadow rounded p-4 pb-6">
+      <h2 className="text-xl font-extrabold text-emerald mb-3">
+        Enroll In Courses
+      </h2>
       {!isSubmitted ? (
         <>
           {!selectedDepartment ? (

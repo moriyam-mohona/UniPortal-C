@@ -43,7 +43,9 @@ const TodaysClass = () => {
             className="flex items-center p-3 border rounded mb-3 bg-white shadow"
           >
             <div className="flex-1">
-              <h3 className="font-semibold text-emerald">{course.name}</h3>
+              <h3 className="font-semibold text-emerald text-sm lg:text-base">
+                {course.name}
+              </h3>
               <p className="text-sm text-emerald">
                 {course.schedule.time} <br /> <strong>Instructor:</strong>{" "}
                 {course.instructor}

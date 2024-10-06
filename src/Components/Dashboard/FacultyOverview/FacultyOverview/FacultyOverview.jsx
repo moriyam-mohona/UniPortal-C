@@ -29,12 +29,12 @@ const FacultyOverview = () => {
         Faculty Overview
       </h2>
 
-      <div className="mb-4">
+      <div className="mb-4 flex flex-wrap">
         {departments.map((department, index) => (
           <button
             key={index}
             onClick={() => handleDepartmentClick(department)}
-            className="mr-2 mb-2 px-4 py-2 bg-emerald text-white rounded hover:bg-emerald/20 hover:text-emerald hover:font-semibold"
+            className="mr-2 mb-2 px-4 py-2 bg-emerald text-white rounded hover:bg-emerald/50  hover:font-semibold flex-1 min-w-[120px] sm:min-w-[150px] text-center"
           >
             {department}
           </button>

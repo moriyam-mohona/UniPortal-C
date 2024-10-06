@@ -16,8 +16,8 @@ const UpcomingEvents = () => {
   }, []);
   return (
     <div className="flex flex-col items-start bg-lightMoss shadow rounded p-4 pb-6">
-      <h2 className="text-xl font-extrabold text-emerald text-center px-1 lg:px-4 mb-3">
-        Events
+      <h2 className="text-xl font-extrabold text-emerald text-center mb-3">
+        Upcoming Events
       </h2>
       {/* Calendar */}
       <div className="w-full rounded-xl mb-5">

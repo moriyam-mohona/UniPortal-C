@@ -16,15 +16,17 @@ const CourseDetails = () => {
   }
 
   return (
-    <div className="">
-      <div className="mx-auto p-6 md:p-8 lg:p-14 w-full bg-white rounded-lg shadow-lg  min-h-screen">
-        <button
-          onClick={() => navigate("/Dashboard/Student-Portal")}
-          className="mb-4 px-4 py-2 bg-emerald text-white rounded hover:bg-emerald-dark transition duration-300"
-        >
-          <IoArrowBack />
-        </button>
-        <h1 className="text-3xl font-bold text-emerald mb-4">{course.name}</h1>
+    <div className="bg-lightMoss p-6 rounded-lg shadow-md max-w-4xl mx-auto mt-8">
+      <button
+        onClick={() => navigate(-1)}
+        className="mb-4 px-4 py-2 bg-emerald text-white rounded hover:bg-darkMoss"
+      >
+        <IoArrowBack />
+      </button>
+      <div className="bg-white p-6 rounded-lg shadow">
+        <h1 className="text-3xl font-extrabold text-emerald mb-4">
+          {course.name}
+        </h1>
         <p className="text-sm md:text-base mb-2">
           <strong className="text-emerald">Instructor:</strong>{" "}
           {course.instructor}

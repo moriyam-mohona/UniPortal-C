@@ -23,7 +23,7 @@ const StudentsCourses = () => {
 
   return (
     <div className="bg-lightMoss shadow rounded p-4 pb-6">
-      <h2 className="text-xl font-extrabold text-emerald px-1 lg:px-4 mb-3">
+      <h2 className="text-xl font-extrabold text-emerald mb-3">
         Current Courses
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -45,7 +45,7 @@ const StudentsCourses = () => {
             >
               <Link
                 to={`/Dashboard/Course-Details/${course.id}`}
-                className="text-base lg:text-lg font-bold text-emerald hover:underline"
+                className="text-sm lg:text-base font-bold text-emerald hover:underline"
               >
                 {course.name}
               </Link>

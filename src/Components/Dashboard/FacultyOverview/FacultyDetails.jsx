@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import facultyData from "../../../assets/JsonFiles/FacultyData.json";
+import { IoArrowBack } from "react-icons/io5";
 
 const FacultyDetails = () => {
   const { name } = useParams();
@@ -26,7 +27,7 @@ const FacultyDetails = () => {
         onClick={() => navigate(-1)}
         className="mb-4 px-4 py-2 bg-emerald text-white rounded hover:bg-darkMoss"
       >
-        Back
+        <IoArrowBack />
       </button>
       <div className="bg-white p-6 rounded-lg shadow">
         <h2 className="text-3xl font-extrabold text-emerald mb-4">

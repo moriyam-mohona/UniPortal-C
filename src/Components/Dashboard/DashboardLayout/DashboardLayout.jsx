@@ -14,6 +14,8 @@ const DashboardLayout = () => {
           backgroundImage: `url(${bg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+          overflowY: "auto",
         }}
       >
         <Outlet />
